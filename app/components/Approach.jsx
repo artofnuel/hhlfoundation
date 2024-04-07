@@ -12,7 +12,7 @@ const Approach = () => {
   return (
     <main className="min-h-screen flex flex-col">
       <div className="w-full h-[200px] md:h-[350px]"></div>
-      <div className="w-full md:h-auto h-[1350px] py-10 bg-bkg relative mx-auto pb-10">
+      <div className="w-full md:h-auto h-[1300px] py-10 bg-bkg relative mx-auto pb-10">
         <div className="w-full flex justify-center items-center">
           <Image
             src={image.img3}
@@ -23,7 +23,7 @@ const Approach = () => {
           />
         </div>
         <div className=" flex flex-col justify-end items-center">
-          <h2 className="my-5 md:my-10 text-2xl md:text-4xl font-semibold text-white">
+          <h2 className="mt-44 md:my-10 text-2xl md:text-4xl font-semibold text-white">
             Our Approach
           </h2>
           <div className="p-5 w-full my-4 max-w-7xl grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-10 text-white">

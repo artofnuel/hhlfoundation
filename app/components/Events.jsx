@@ -12,8 +12,8 @@ const Events = () => {
         {ourEvent.map((item, index) => (
           <div
             key={index}
-            className="h-40 bg-yellow-300 flex-grow rounded-lg p-5"
-            style={{ flexBasis: "calc(50% - 8px)" }}
+            className="w-auto h-40 bg-yellow-300 flex-grow rounded-lg p-5 basis-[calc(50% - 8px)]"
+            // style={{ flexBasis: "calc(50% - 8px)" }}
           >
             <div className="w-full h-full flex flex-col justify-evenly items-start">
               <div className="flex gap-1 justify-start items-center bg-white pr-1 rounded-r-lg">

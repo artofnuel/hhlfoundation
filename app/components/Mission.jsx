@@ -2,6 +2,7 @@
 import React from "react";
 import { image } from "../assets/images";
 import Image from "next/image";
+import Link from "next/link";
 
 const Mission = () => {
   return (
@@ -34,10 +35,13 @@ const Mission = () => {
               </span>
             </li>
           </ul>
-          <button className="bg-white text-black p-3 px-5 rounded-md mt-10 border-2 border-primary relative hover:-translate-y-2 transition-transform duration-500 ease-in-out">
+          <Link
+            href="/contact"
+            className="bg-white text-black p-3 px-5 rounded-md mt-10 border-2 border-primary relative hover:-translate-y-2 transition-transform duration-500 ease-in-out"
+          >
             Join the Mission
             <div className="w-4 h-4 bg-white border-4 border-primary rounded-full absolute -top-1 -right-1 animate-ping"></div>
-          </button>
+          </Link>
         </div>
         <div className="w-full lg:w-2/5 md:h-full">
           <Image

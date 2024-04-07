@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { image } from "../assets/images";
+import Link from "next/link";
 
 const Volunteer = () => {
   return (
@@ -21,12 +22,12 @@ const Volunteer = () => {
             needs!
           </h3>
           <div className="text-black flex gap-5 md:gap-10">
-            <button className="p-3 px-4 md:px-8 text-sm rounded-lg bg-bkg text-primary hover:-translate-y-2 transition-transform duration-500 ease-in-out">
+            <Link
+              href="contact"
+              className="p-3 px-4 md:px-8 text-sm rounded-lg bg-bkg text-primary hover:-translate-y-2 transition-transform duration-500 ease-in-out"
+            >
               Join as a Volunteer
-            </button>
-            <button className="p-3 px-4 md:px-8 text-sm rounded-lg bg-white text-primary font-semibold hover:-translate-y-2 transition-transform duration-500 ease-in-out">
-              Donate!
-            </button>
+            </Link>
           </div>
         </div>
       </div>
