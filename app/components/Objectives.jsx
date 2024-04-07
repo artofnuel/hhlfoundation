@@ -6,8 +6,8 @@ import Image from "next/image";
 const Objectives = () => {
   return (
     <main className="bg-bkg min-h-screen md:h-screen p-5 overflow-hidden">
-      <div className="w-full max-w-7xl mx-auto h-full flex flex-col md:flex-row justify-between items-start gap-5 text-primary">
-        <div className="w-full md:w-2/5 md:h-full">
+      <div className="w-full max-w-7xl mx-auto h-full flex flex-col lg:flex-row justify-between items-start gap-5 text-primary">
+        <div className="w-full lg:w-2/5 md:h-full">
           <Image
             src={image.img2}
             alt="hhlfoundation mission image"
@@ -16,10 +16,10 @@ const Objectives = () => {
             height={1000}
           />
         </div>
-        <div className="w-full md:w-3/6 md:h-full flex flex-col justify-center items-start">
+        <div className="w-full lg:w-3/6 md:h-full flex flex-col justify-center items-start">
           <div className="flex gap-3 justify-start items-center bg-white py-2 pr-2 rounded-r-lg">
             <div className="w-[10px] h-[35px] bg-primary"></div>
-            <h3 className="text-xl md:text-4xl font-semibold text-primary">
+            <h3 className="text-blacktext-xl md:text-4xl font-semibold text-black">
               Our Objectives
             </h3>
           </div>
@@ -49,7 +49,7 @@ const Objectives = () => {
               </span>
             </li>
           </ul>
-          <button className="bg-white p-3 px-5 rounded-md mt-10 border-2 border-primary relative">
+          <button className="bg-white text-black p-3 px-5 rounded-md mt-10 border-2 border-primary relative hover:-translate-y-2 transition-transform duration-500 ease-in-out">
             Aid our Goals
             <div className="w-4 h-4 bg-white border-4 border-primary rounded-full absolute -top-1 -right-1 animate-ping"></div>
           </button>

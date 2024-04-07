@@ -7,7 +7,7 @@ const Banner = ({ text, author }) => {
         <blockquote className="text-sm md:text-base">
           <p>{text}</p>
         </blockquote>
-        <p className="mt-5 md:w-1/2 w-full mx-auto p-3 rounded-md bg-bkg">
+        <p className="mt-5 md:w-1/2 w-full mx-auto p-3 rounded-md bg-bkg text-black font-semibold">
           - {author} -
         </p>
       </div>
