@@ -1,13 +1,13 @@
 import React from "react";
-import ContactHero from "./components/ContactHero";
-import Contactjs from "./components/Contactjs";
+import BlogHero from "./components/BlogHero";
+import BlogList from "./components/BlogList";
 
 export const metadata = {
-  title: "Contact Us | Hassan and Hussein Lecky Foundation",
+  title: "Events | Hassan and Hussein Lecky Foundation",
   description:
-    "Have questions or generally want to support us, feel free to fill the contact form",
+    "Check out our blog for all information regarding the foundation and it's events!",
   alternates: {
-    canonical: "/contact",
+    canonical: "/blog",
     languages: {
       "en-US": "/en-US",
     },
@@ -16,11 +16,11 @@ export const metadata = {
   applicationName: "Next.js",
   referrer: "origin-when-cross-origin",
   openGraph: {
-    title: "Contact Us | Hassan and Hussein Lecky Foundation",
+    title: "Events | Hassan and Hussein Lecky Foundation",
     description:
-      "Have questions or generally want to support us, feel free to fill the contact form",
-    url: "http://www.hhlfoundation.org/contact",
-    siteName: "Contact Us | Hassan and Hussein Lecky Foundation",
+      "Check out our blog for all information regarding the foundation and it's events!",
+    url: "http://www.hhlfoundation.org/blog",
+    siteName: "Events | Hassan and Hussein Lecky Foundation",
     type: "website",
   },
   robots: {
@@ -37,9 +37,9 @@ export const metadata = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Contact Us | Hassan and Hussein Lecky Foundation",
+      title: "Events | Hassan and Hussein Lecky Foundation",
       description:
-        "Have questions or generally want to support us, feel free to fill the contact form",
+        "Check out our blog for all information regarding the foundation and it's events!",
       creator: "@hhlfoundation",
       // images: ['https://nextjs.org/og.png'], // Must be an absolute URL
     },
@@ -48,9 +48,9 @@ export const metadata = {
 
 const page = () => {
   return (
-    <main className="w-full h-auto">
-      <ContactHero />
-      <Contactjs />
+    <main>
+      <BlogHero />
+      <BlogList />
     </main>
   );
 };

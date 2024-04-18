@@ -21,7 +21,7 @@ export default function Home() {
       <Objectives />
       <Approach />
       <Volunteer />
-      <Events />
+      {/* <Events /> */}
     </main>
   );
 }

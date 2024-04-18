@@ -3,6 +3,7 @@
 export const image = {
   logo: require("../assets/logo.jpg"),
   bkg: require("../assets/bkg.jpg"),
+  bkg2: require("../assets/bkg2.jpg"),
   hero: require("../assets/img1.jpg"),
   objective: require("../assets/objective.jpg"),
   img2: require("../assets/img2.jpg"),
@@ -17,4 +18,8 @@ export const image = {
   img11: require("../assets/img11.jpg"),
   img12: require("../assets/img12.jpg"),
   img13: require("../assets/img13.jpg"),
+  charity1: require("../assets/charity1.jpg"),
+  charity2: require("../assets/charity2.jpg"),
+  charity3: require("../assets/charity3.jpg"),
+  volunteer: require("../assets/volunteer.jpg"),
 };
