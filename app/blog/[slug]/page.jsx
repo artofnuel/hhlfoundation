@@ -4,9 +4,9 @@ import { client } from "@/sanity/lib/client";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
-import { blockContent } from "@/sanity/schemaTypes/blockContent";
 import { Animate } from "@/app/components/Animate";
 import { InfinitySpin } from "react-loader-spinner";
+import { myPortableTextComponents } from "@/app/components/data";
 
 const page = () => {
   const [blog, setBlog] = useState(null);
@@ -20,6 +20,9 @@ const page = () => {
         category,
         description,
         date,
+        blogImages[] {
+          'url': asset->url
+        },
         'slug': slug.current,
         'image': image.asset->url,
         'alt': image.alt,
@@ -51,6 +54,8 @@ const page = () => {
     );
   }
 
+  const { blogImages } = blog;
+
   const headings = `prose-headings:text-2xl md:prose-h1:text-5xl md:prose-h2:text-4xl prose-h4:text-3xl prose-headings:text-white`;
   const p = `prose-p:font-medium prose-p:text-white/70 prose-p:text-lg prose-p:text-justify`;
   const strong = `prose-strong:text-white prose-strong:font-bold`;
@@ -60,8 +65,8 @@ const page = () => {
     <Animate>
       <main className="w-full h-auto text-primary text-pretty">
         <div className="w-full mx-auto">
-          <div className="w-full h-[300px] md:h-[450px] p-5 bg-bkg flex flex-col justify-center md:justify-start items-center gap-5 relative">
-            <h1 className="md:mt-20 font-bold text-xl md:text-4xl">
+          <div className="w-full h-auto p-5 bg-bkg flex flex-col justify-center md:justify-start items-center gap-5 relative my-10">
+            <h1 className="text-center font-bold text-xl md:text-4xl">
               {blog.title}
             </h1>
             <p className="text-sm text-white">
@@ -76,7 +81,7 @@ const page = () => {
               {blog.description}
             </p>
             {blog.image && (
-              <div className="w-full h-auto absolute bottom-[-45%]">
+              <div className="w-full h-auto">
                 <Image
                   src={blog.image}
                   alt={blog.image.alt}
@@ -88,11 +93,31 @@ const page = () => {
             )}
           </div>
 
-          <article className="mt-36 md:mt-[300px] mb-10 md:mb-[100px] p-5">
+          <article className="my-5 p-5">
             <div className="max-w-4xl mx-auto text-pretty text-justify">
-              <PortableText value={blog.content} components={blockContent} />
+              <PortableText
+                value={blog.content}
+                components={myPortableTextComponents}
+              />
             </div>
           </article>
+          <div>
+            {blogImages && (
+              <div className="w-full max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-5 p-5">
+                {blogImages.map((blog, index) => (
+                  <div className="w-full">
+                    <Image
+                      src={blog.url}
+                      alt="event image"
+                      width={1000}
+                      height={1000}
+                      className="w-full h-full aspect-square object-cover rounded-md"
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
         {/* Render other blog content here */}
       </main>

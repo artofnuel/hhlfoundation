@@ -41,6 +41,17 @@ export const blog = {
       fields: [{ type: "text", name: "alt", title: "Alt Text" }],
     },
     {
+      name: "blogImages",
+      type: "array",
+      title: "Blog Images",
+      of: [
+        {
+          type: "image",
+          fields: [{ type: "text", name: "alt", title: "Alt Text" }],
+        },
+      ],
+    },
+    {
       name: "content",
       title: "Content",
       type: "blockContent",
