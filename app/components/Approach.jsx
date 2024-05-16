@@ -60,7 +60,7 @@ const Approach = () => {
                 />
                 <h3 className="flex gap-3 justify-center items-center uppercase font-bold z-10">
                   <HiSpeakerphone />
-                  Advocay
+                  Advocacy
                 </h3>
                 <p className="pt-3 text-left font-base font-light z-10">
                   Carrying out sensitization activities and campaigns to

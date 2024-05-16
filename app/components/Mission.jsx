@@ -17,7 +17,7 @@ const Mission = () => {
                 Our Mission
               </h3>
             </div>
-            <ul className="w-full list-disc pl-5 py-5 space-y-3 text-lg md:text-xl">
+            <ul className="w-4/5 list-disc pl-5 py-5 space-y-3 text-lg md:text-xl">
               <li className="p-1">
                 Investing in economic and social development for all{" "}
                 <span className=" p-1 bg-white rounded-md">

@@ -54,8 +54,6 @@ const page = () => {
     );
   }
 
-  const { blogImages } = blog;
-
   const headings = `prose-headings:text-2xl md:prose-h1:text-5xl md:prose-h2:text-4xl prose-h4:text-3xl prose-headings:text-white`;
   const p = `prose-p:font-medium prose-p:text-white/70 prose-p:text-lg prose-p:text-justify`;
   const strong = `prose-strong:text-white prose-strong:font-bold`;
@@ -102,9 +100,9 @@ const page = () => {
             </div>
           </article>
           <div>
-            {blogImages && (
+            {blog.blogImages && (
               <div className="w-full max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-5 p-5">
-                {blogImages.map((blog, index) => (
+                {blog.blogImages.map((blog, index) => (
                   <div className="w-full">
                     <Image
                       src={blog.url}

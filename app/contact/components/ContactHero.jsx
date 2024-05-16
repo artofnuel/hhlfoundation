@@ -33,14 +33,16 @@ const ContactHero = () => {
             <p className="text-lg font-bold flex flex-col gap-2">
               Let's Talk!
               <span className="text-base font-normal flex flex-col md:flex-row justify-center gap-3">
-                <span>Phone Number</span>
-                <span>husseinleckyprojects@gmail.com</span>
+                <a href="tel:+2348039536368">+2348039536368</a>
+                <a href="mailto:husseinleckyprojects@gmail.com">
+                  husseinleckyprojects@gmail.com
+                </a>
               </span>
             </p>
             <p className="text-lg font-bold flex flex-col gap-2">
               Headoffice
               <span className="text-base font-normal">
-                <span>Location</span>
+                <span>{`No.1 Lecky Convention Centre, Otaru Road, Auchi, Edo State`}</span>
               </span>
             </p>
             <div className="flex gap-5 p-3 border-white border-2 rounded-lg">

@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
         <div className="z-20 absolute p-5 bottom-0 md:bottom-20 md:right-10">
           <h1 className="font-light text-base md:text-4xl text-white block md:flex flex-col">
-            Empowering all one{" "}
+            Empowering everyone{" "}
             <span className="hidden md:block">community at a time</span>
           </h1>
         </div>
